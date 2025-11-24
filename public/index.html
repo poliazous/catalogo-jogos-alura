@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de Jogos - RAWG API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 Explorador de Jogos</h1>
+            <p>Encontre informações sobre seus jogos favoritos</p>
+        </header>
+
+        <div class="search-section">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Digite o nome do jogo (ex: The Witcher, GTA V)..."
+                >
+                <button id="searchBtn">Buscar Jogos</button>
+            </div>
+        </div>
+
+        <div class="loading" id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Buscando jogos...</p>
+        </div>
+
+        <div class="games-grid" id="gamesGrid">
+            <!-- Os jogos serão inseridos aqui via JavaScript -->
+        </div>
+
+        <div class="error-message" id="errorMessage" style="display: none;">
+            <p>Erro ao carregar jogos. Tente novamente.</p>
+        </div>
+
+        <footer>
+            <p>Dados fornecidos por <a href="https://rawg.io" target="_blank">RAWG.io</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
