@@ -18,11 +18,11 @@ app.use(cors());
 app.use(express.json());
 
 // Servir arquivos estáticos
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, ' ')));
 
 // Rota principal
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, ' ', 'index.html'));
 });
 
 // Rota para buscar jogos
